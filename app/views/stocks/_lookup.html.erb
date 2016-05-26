@@ -13,5 +13,11 @@
     </div>
   </div>
   <% end %>
-
+  <% if @stock %>
+    <div id="stock-lookup-results" class="well results-bloack">
+      <strong>Symbol:</strong> <%= @stock.ticker %>
+      <strong>Name:</strong> <%= @stock.name %>
+      <strong>Price:</strong> <%= @stock.price %>
+    </div>
+  <% end %>
 </div>
